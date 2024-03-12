@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class KeyManager : MonoBehaviour
 {
-    public GameObject imagenLlave;
+    public GameObject imagenlinterna;
     void OnTriggerEnter(Collider c){
         print("En el trigger");
-        if (c.gameObject.name=="LlavePoder"){
+        if (c.gameObject.name=="Flashlight"){
             //1. Desaparece la llave
             Destroy(c.gameObject);
             //2. Aparece en la interfaz de usuario
